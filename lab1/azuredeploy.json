@@ -11,10 +11,9 @@
         "tags": {
             "displayName": "zachmarkelstgacct"
         },
-        "sku": {
+        "properties": {
             "name": "Standard_LRS"
         }
-        "kind": "StorageV2",
     }],
     "outputs": {}
 }
