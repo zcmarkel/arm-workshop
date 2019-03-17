@@ -3,17 +3,20 @@
     "contentVersion": "1.0.0.0",
     "parameters": {},
     "variables": {},
-    "resources": [{
-        "type": "Microsoft.Storage/storageAccounts",
-        "apiVersion": "2018-07-01",
-        "name": "zachmarkelstgacct",
-        "location": "[resourceGroup().location]",
-        "tags": {
-            "displayName": "zachmarkelstgacct"
-        },
-        "properties": {
-            "name": "Standard_LRS"
+    "resources": [
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2018-07-01",
+            "name": "zachmarkelstgacct",
+            "location": "[resourceGroup().location]",
+            "tags": {
+                "displayName": "zachmarkelstgacct"
+            },
+            "sku": {
+                "name": "Standard_LRS"
+            },
+            "kind": "StorageV2"
         }
-    }],
+    ],
     "outputs": {}
 }
